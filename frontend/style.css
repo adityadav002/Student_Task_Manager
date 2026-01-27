@@ -1,0 +1,344 @@
+/* ===========================
+   CSS Reset & Base Styles
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color Palette */
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-soft: rgba(79, 70, 229, 0.12);
+
+  --success-color: #10b981;
+  --error-color: #ef4444;
+
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-light: #9ca3af;
+
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-hover: #f3f4f6;
+
+  --border-color: #e5e7eb;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 8px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.6rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: radial-gradient(circle at top, #7c83ff 0%, #5b47d6 45%, #3b2a88 100%);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* Hide Helper */
+.hidden {
+  display: none !important;
+}
+
+/* ===========================
+   Container
+   =========================== */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(14px);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  animation: fadeInScale 0.6s ease;
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.97) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ===========================
+   Header
+   =========================== */
+.header {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: white;
+  padding: 2.2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ===========================
+   Task Input
+   =========================== */
+.task-input-section {
+  padding: 1.8rem;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.input-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: white;
+  transition: 0.2s ease;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px var(--primary-soft);
+  transform: scale(1.01);
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+.btn {
+  padding: 0.9rem 1.4rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: white;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.3);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 28px rgba(79, 70, 229, 0.45);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   Messages
+   =========================== */
+.message-container {
+  margin-top: 0.6rem;
+  min-height: 28px;
+}
+
+.message {
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  animation: slideFade 0.3s ease;
+}
+
+.message-success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.message-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+@keyframes slideFade {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   Tasks Section
+   =========================== */
+.tasks-section {
+  padding: 1.8rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.task-count {
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--bg-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-full);
+}
+
+/* ===========================
+   Loading State
+   =========================== */
+.loading-state {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+.spinner {
+  width: 42px;
+  height: 42px;
+  margin: auto;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===========================
+   Empty State
+   =========================== */
+.empty-state {
+  text-align: center;
+  padding: 2.2rem;
+  color: var(--text-secondary);
+  animation: fadeIn 0.3s ease;
+}
+
+.empty-icon {
+  font-size: 3.8rem;
+  margin-bottom: 0.6rem;
+  opacity: 0.6;
+}
+
+/* ===========================
+   Task List
+   =========================== */
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-md);
+  background: white;
+  border: 1px solid var(--border-color);
+  margin-bottom: 0.8rem;
+  transition: all 0.2s ease;
+  animation: taskFade 0.25s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-3px) scale(1.01);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.task-text {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.task-badge {
+  background: var(--bg-secondary);
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--error-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.4rem;
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+  transform: scale(1.05);
+}
+
+@keyframes taskFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 640px) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

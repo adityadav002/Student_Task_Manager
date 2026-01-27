@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Task Manager - Organize your homework efficiently">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">📚 Student Task Manager</h1>
+      <p class="subtitle">Keep track of your homework and assignments</p>
+    </header>
+
+    <!-- Task Input Section -->
+    <section class="task-input-section">
+      <div class="input-container">
+        <input 
+          type="text" 
+          id="taskInput" 
+          class="task-input" 
+          placeholder="Enter your homework task..."
+          maxlength="500"
+          aria-label="Task input"
+        >
+        <button 
+          id="addTaskBtn" 
+          class="btn btn-primary"
+          aria-label="Add task"
+        >
+          Add Task
+        </button>
+      </div>
+
+      <!-- Messages -->
+      <div id="messageContainer" class="message-container" role="alert" aria-live="polite"></div>
+    </section>
+
+    <!-- Tasks Section -->
+    <section class="tasks-section">
+      <div class="section-header">
+        <h2 class="section-title">Your Tasks</h2>
+        <span id="taskCount" class="task-count">0 tasks</span>
+      </div>
+
+      <!-- Loading State (Hidden by default) -->
+      <div id="loadingState" class="loading-state hidden">
+        <div class="spinner"></div>
+        <p>Loading tasks...</p>
+      </div>
+
+      <!-- Empty State (Visible by default) -->
+      <div id="emptyState" class="empty-state">
+        <div class="empty-icon">📝</div>
+        <h3>No tasks yet</h3>
+        <p>Add your first homework task to get started!</p>
+      </div>
+
+      <!-- Task List (Hidden until tasks exist) -->
+      <ul id="taskList" class="task-list hidden"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
