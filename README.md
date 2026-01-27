@@ -57,21 +57,18 @@ This improved UX clarity and UI correctness.
 4️⃣ Output Screenshots
 
 ✅ Task Creation
-
-(Screenshot showing tasks added successfully)
-📸 screenshots/tasks-added.png
+<img width="1919" height="1079" alt="task_added" src="https://github.com/user-attachments/assets/d2b237cc-b77e-43c8-b625-9d6fc2fece6e" />
 
 ✅ API Working (GET & POST Requests)
 
-(Screenshot of API requests in Postman / Browser)
 📸 screenshots/api-working.png
 
 ✅ Delete Task Feature
 
-(Screenshot showing task deletion working)
+<img width="1919" height="1077" alt="delte_notify" src="https://github.com/user-attachments/assets/44e7d3f3-838c-4248-afda-902703ee578f" />
 
-📸 screenshots/delete-task.png
-Screenshots are embedded in the repository to prove correct project execution.
+<img width="1919" height="1079" alt="delete_Success" src="https://github.com/user-attachments/assets/3e84ca80-2ecf-4902-8d99-1d761accb912" />
+
 
 5️⃣ Future Improvements (If I Had 2 More Days)
 
