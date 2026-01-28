@@ -61,7 +61,9 @@ This improved UX clarity and UI correctness.
 
 ✅ API Working (GET & POST Requests)
 
-📸 screenshots/api-working.png
+![WhatsApp Image 2026-01-28 at 09 50 15](https://github.com/user-attachments/assets/606be677-6051-4737-9c3d-bce2ee80ade9)
+
+![WhatsApp Image 2026-01-27 at 23 57 58](https://github.com/user-attachments/assets/ba5e759f-a971-4307-9ba8-a258b671ceb2)
 
 ✅ Delete Task Feature
 
